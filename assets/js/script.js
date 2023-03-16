@@ -28,7 +28,6 @@ function palindroma(parola) {
         //stampiamo l'array
         console.log(parolaReverse);
     }
-    console.log(parolaReverse);
 
     //controlliamo che parola e parola reverse siano uguali
     
@@ -42,4 +41,52 @@ function palindroma(parola) {
 
 palindroma(parolapalindroma)
 
-//
+
+//ESERCIZIO 2
+
+//l'utente sceglie se pari o dispari e un numero da 1 a 5
+let userEven = prompt('scegli tra pari e dispari')
+console.log(userEven);
+let userNumber = Number(prompt('scegli un numero da 1 a 5')) 
+console.log(userNumber);
+
+//generiamo un numero random (sempre da 1 a 5) per il computer (unsando una funzione)
+function computerRandom(min, max) {
+    return Math.floor(Math.random() * (1 + max - min)) + min;
+}
+
+let pcRand = computerRandom(1, 5)
+console.log(pcRand);
+
+//sommiamo i due numeri
+const sum = userNumber + pcRand
+console.log(sum);
+
+//stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+
+function even(number) {
+    if(number % 2 == 0) {
+        console.log('il numero è pari');
+        return true
+    } else {
+        console.log('il numero è dispari');
+        return false
+    }
+}
+
+const result = even(sum)
+console.log(result);
+
+//dichiariamo chi ha vinto
+
+function evenOrNot(userInput, computerInput) {
+    if (userInput == 'pari' && computerInput == true) {
+        console.log('hai indovinato');
+    } else if (userInput == 'dispari' && computerInput == false) {
+        console.log('hai indovinato');
+    } else {
+        console.log('non hai indovinato');
+    }
+}
+
+console.log(evenOrNot(userEven, computerInput));
