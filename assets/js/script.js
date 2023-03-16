@@ -4,10 +4,10 @@ const parolapalindroma = 'aerea'
 
 //creiamo la funzione 
 function palindroma(parola) {
-
+    //creiamo un array delle lettere nella prima parola
+    let wordArray = []
+    let wordArrayOpposite = []
     for (let i = 0; i < parola.length; i++) {
-        //creiamo un array delle lettere nella prima parola
-        let wordArray = [];
         //variabile lettera a cui aggiungiamo il valore di ogni lettera della parola
         let lettera = parola[i];
         //aggiungiamo la lettera all'array
@@ -16,6 +16,8 @@ function palindroma(parola) {
         console.log(wordArray);
     }
     console.log(wordArray);
+
+
 }
 
 let result = palindroma(parolapalindroma)
