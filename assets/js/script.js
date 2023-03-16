@@ -27,6 +27,17 @@ function palindroma(parola) {
         console.log(wordArrayOpposite);
     }
     console.log(wordArrayOpposite);
+
+    //controlliamo che gli elementi[i] degli array siano entrambi uguali
+    for (let i = 0; i < wordArray.length; i++) {
+        if (!(wordArray[i] == wordArrayOpposite[i])) {
+            console.log('la parola non è palindroma');
+            return false;
+        } else {
+            console.log('la parola è palindroma');
+        }
+    
+    }
 }
 
-let result = palindroma(parolapalindroma)
+palindroma(parolapalindroma)
