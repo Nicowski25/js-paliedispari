@@ -66,27 +66,19 @@ console.log(sum);
 
 function even(number) {
     if(number % 2 == 0) {
-        console.log('il numero è pari');
-        return true
+        return 'pari'
     } else {
-        console.log('il numero è dispari');
-        return false
+        return 'dispari'
     }
 }
 
 const result = even(sum)
 console.log(result);
 
-//dichiariamo chi ha vinto
+//dichiariamo chi ha vinto  
 
-function evenOrNot(userInput, computerInput) {
-    if (userInput == 'pari' && computerInput == true) {
-        console.log('hai indovinato');
-    } else if (userInput == 'dispari' && computerInput == false) {
-        console.log('hai indovinato');
-    } else {
-        console.log('non hai indovinato');
-    }
+if (even(sum) == userEven) {
+    console.log('you win');
+} else {
+    console.log('you lose');
 }
-
-console.log(evenOrNot(userEven, computerInput));
